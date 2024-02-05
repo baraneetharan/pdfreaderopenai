@@ -19,7 +19,7 @@
   "contributors": [],
   "scripts": {
     "build": "tsc",
-    "start": "node ./dist/app.ts",
+    "start": "node ./src/app.js",
     "dev": "ts-node --esm ./src/app.ts"
   },
   "dependencies": {
