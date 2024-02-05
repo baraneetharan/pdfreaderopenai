@@ -6,7 +6,7 @@ import { RetrievalQAChain } from "langchain/chains";
 import { OpenAI } from "langchain/llms/openai";
 import * as dotenv from "dotenv";
 
-dotenv.config();
+// dotenv.config();
 
 const loader = new PDFLoader("src/documents/budget_speech.pdf");
 
