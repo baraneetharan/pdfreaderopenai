@@ -30,7 +30,9 @@ const vectorStore = await HNSWLib.fromDocuments(
 
 const vectorStoreRetriever = vectorStore.asRetriever();
 const model = new OpenAI({
-  modelName: 'gpt-3.5-turbo'
+  modelName: 'gpt-3.5-turbo',
+  temperature: 0.9,
+  openAIApiKey: "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"
 });
 
 const chain = RetrievalQAChain.fromLLM(model, vectorStoreRetriever);
